@@ -1,0 +1,1025 @@
+<ScrollView xmlns:tools="http://schemas.android.com/tools"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:fillViewport="true"
+    android:scrollbars="vertical" >
+
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:paddingBottom="@dimen/activity_vertical_margin"
+        android:paddingLeft="@dimen/activity_horizontal_margin"
+        android:paddingRight="@dimen/activity_horizontal_margin"
+        android:paddingTop="@dimen/activity_vertical_margin"
+        tools:context=".MainActivity"
+        android:orientation="vertical"
+        android:background="#000000" >
+
+        <EditText
+            android:id="@+id/billsAndCoinsEditText"
+            android:text="@string/bills_and_coins_total_value"
+            android:inputType="numberDecimal"
+            android:layout_width="0dp"
+            android:layout_height="0dp" >
+
+        </EditText>
+
+        <EditText
+            android:id="@+id/hundredEditText"
+            android:layout_width="140dp"
+            android:layout_height="wrap_content"
+            android:layout_alignBottom="@+id/hundredTextView"
+            android:layout_centerHorizontal="true"
+            android:hint="@string/number_of"
+            android:inputType="number"
+            android:paddingBottom="@dimen/activity_vertical_margin"
+            android:text="@string/hundred_edit_text"
+            android:textSize="16sp"
+            android:background="@drawable/rounded_edittext"
+            android:gravity="center" >
+
+            <requestFocus />
+        </EditText>
+
+        <EditText
+            android:id="@+id/fiftyEditText"
+            android:layout_width="140dp"
+            android:layout_height="wrap_content"
+            android:layout_alignBottom="@+id/fiftyTextView"
+            android:layout_centerHorizontal="true"
+            android:hint="@string/number_of"
+            android:inputType="number"
+            android:paddingBottom="@dimen/activity_vertical_margin"
+            android:text="@string/fifty_edit_text"
+            android:textSize="16sp"
+            android:background="@drawable/rounded_edittext"
+            android:gravity="center" />
+
+        <EditText
+            android:id="@+id/twentyEditText"
+            android:layout_width="140dp"
+            android:layout_height="wrap_content"
+            android:layout_alignBottom="@+id/twentyTextView"
+            android:layout_centerHorizontal="true"
+            android:hint="@string/number_of"
+            android:inputType="number"
+            android:paddingBottom="@dimen/activity_vertical_margin"
+            android:text="@string/twenty_edit_text"
+            android:textSize="16sp"
+            android:background="@drawable/rounded_edittext"
+            android:gravity="center" />
+
+        <EditText
+            android:id="@+id/tenEditText"
+            android:layout_width="140dp"
+            android:layout_height="wrap_content"
+            android:layout_alignBottom="@+id/tenTextView"
+            android:layout_centerHorizontal="true"
+            android:hint="@string/number_of"
+            android:inputType="number"
+            android:paddingBottom="@dimen/activity_vertical_margin"
+            android:text="@string/ten_edit_text"
+            android:textSize="16sp"
+            android:background="@drawable/rounded_edittext"
+            android:gravity="center" />
+
+        <EditText
+            android:id="@+id/fiveEditText"
+            android:layout_width="140dp"
+            android:layout_height="wrap_content"
+            android:layout_alignBottom="@+id/fiveTextView"
+            android:layout_centerHorizontal="true"
+            android:hint="@string/number_of"
+            android:inputType="number"
+            android:paddingBottom="@dimen/activity_vertical_margin"
+            android:text="@string/five_edit_text"
+            android:textSize="16sp"
+            android:background="@drawable/rounded_edittext"
+            android:gravity="center" />
+
+        <EditText
+            android:id="@+id/twoEditText"
+            android:layout_width="140dp"
+            android:layout_height="wrap_content"
+            android:layout_alignBottom="@+id/twoTextView"
+            android:layout_centerHorizontal="true"
+            android:hint="@string/number_of"
+            android:inputType="number"
+            android:paddingBottom="@dimen/activity_vertical_margin"
+            android:text="@string/two_edit_text"
+            android:textSize="16sp"
+            android:background="@drawable/rounded_edittext"
+            android:gravity="center" />
+
+        <EditText
+            android:id="@+id/oneEditText"
+            android:layout_width="140dp"
+            android:layout_height="wrap_content"
+            android:layout_alignBottom="@+id/oneTextView"
+            android:layout_centerHorizontal="true"
+            android:hint="@string/number_of"
+            android:inputType="number"
+            android:paddingBottom="@dimen/activity_vertical_margin"
+            android:text="@string/one_edit_text"
+            android:textSize="16sp"
+            android:background="@drawable/rounded_edittext"
+            android:gravity="center" />
+
+        <EditText
+            android:id="@+id/coinDollarEditText"
+            android:layout_width="140dp"
+            android:layout_height="wrap_content"
+            android:layout_alignBottom="@+id/coinDollarTextView"
+            android:layout_toStartOf="@+id/blank"
+            android:layout_toLeftOf="@+id/blank"
+            android:layout_marginRight="350dp"
+            android:layout_marginEnd="350dp"
+            android:hint="@string/loose"
+            android:inputType="number"
+            android:paddingBottom="@dimen/activity_vertical_margin"
+            android:text="@string/coin_dollar_edit_text"
+            android:textSize="16sp"
+            android:background="@drawable/rounded_edittext"
+            android:gravity="center"
+            android:layout_alignRight="@+id/addButton"
+            android:layout_alignEnd="@+id/addButton" />
+
+        <EditText
+            android:id="@+id/coinDollarRollEditText"
+            android:layout_width="125dp"
+            android:layout_height="wrap_content"
+            android:layout_alignBottom="@+id/coinDollarTextView"
+            android:layout_alignRight="@+id/addButton"
+            android:layout_alignEnd="@+id/addButton"
+            android:layout_marginRight="125dp"
+            android:layout_marginEnd="125dp"
+            android:hint="@string/rolls"
+            android:inputType="number"
+            android:paddingBottom="@dimen/activity_vertical_margin"
+            android:text="@string/coin_dollar_roll_edit_text"
+            android:textSize="16sp"
+            android:background="@drawable/rounded_edittext"
+            android:gravity="center" />
+
+        <EditText
+            android:id="@+id/halfDollarEditText"
+            android:layout_width="140dp"
+            android:layout_height="wrap_content"
+            android:layout_alignBottom="@+id/halfDollarTextView"
+            android:layout_alignRight="@+id/coinDollarEditText"
+            android:layout_alignEnd="@+id/coinDollarEditText"
+            android:hint="@string/loose"
+            android:inputType="number"
+            android:paddingBottom="@dimen/activity_vertical_margin"
+            android:text="@string/half_dollar_edit_text"
+            android:textSize="16sp"
+            android:background="@drawable/rounded_edittext"
+            android:gravity="center" />
+
+        <EditText
+            android:id="@+id/halfDollarRollEditText"
+            android:layout_width="125dp"
+            android:layout_height="wrap_content"
+            android:layout_alignBottom="@+id/halfDollarTextView"
+            android:layout_alignRight="@+id/addButton"
+            android:layout_alignEnd="@+id/addButton"
+            android:layout_marginRight="125dp"
+            android:layout_marginEnd="125dp"
+            android:hint="@string/rolls"
+            android:inputType="number"
+            android:paddingBottom="@dimen/activity_vertical_margin"
+            android:text="@string/half_dollar_roll_edit_text"
+            android:textSize="16sp"
+            android:background="@drawable/rounded_edittext"
+            android:gravity="center" />
+
+        <EditText
+            android:id="@+id/quarterEditText"
+            android:layout_width="140dp"
+            android:layout_height="wrap_content"
+            android:layout_alignBottom="@+id/quarterTextView"
+            android:layout_alignRight="@+id/coinDollarEditText"
+            android:layout_alignEnd="@+id/coinDollarEditText"
+            android:hint="@string/loose"
+            android:inputType="number"
+            android:paddingBottom="@dimen/activity_vertical_margin"
+            android:text="@string/quarter_edit_text"
+            android:textSize="16sp"
+            android:background="@drawable/rounded_edittext"
+            android:gravity="center" />
+
+        <EditText
+            android:id="@+id/quarterRollEditText"
+            android:layout_width="125dp"
+            android:layout_height="wrap_content"
+            android:layout_alignBottom="@+id/quarterTextView"
+            android:layout_alignRight="@+id/addButton"
+            android:layout_alignEnd="@+id/addButton"
+            android:layout_marginRight="125dp"
+            android:layout_marginEnd="125dp"
+            android:hint="@string/rolls"
+            android:inputType="number"
+            android:paddingBottom="@dimen/activity_vertical_margin"
+            android:text="@string/quarter_roll_edit_text"
+            android:textSize="16sp"
+            android:background="@drawable/rounded_edittext"
+            android:gravity="center" />
+
+        <EditText
+            android:id="@+id/dimeEditText"
+            android:layout_width="140dp"
+            android:layout_height="wrap_content"
+            android:layout_alignBottom="@+id/dimeTextView"
+            android:layout_alignRight="@+id/coinDollarEditText"
+            android:layout_alignEnd="@+id/coinDollarEditText"
+            android:hint="@string/loose"
+            android:inputType="number"
+            android:paddingBottom="@dimen/activity_vertical_margin"
+            android:text="@string/dime_edit_text"
+            android:textSize="16sp"
+            android:background="@drawable/rounded_edittext"
+            android:gravity="center" />
+
+        <EditText
+            android:id="@+id/dimeRollEditText"
+            android:layout_width="125dp"
+            android:layout_height="wrap_content"
+            android:layout_alignBottom="@+id/dimeTextView"
+            android:layout_alignRight="@+id/addButton"
+            android:layout_alignEnd="@+id/addButton"
+            android:layout_marginRight="125dp"
+            android:layout_marginEnd="125dp"
+            android:hint="@string/rolls"
+            android:inputType="number"
+            android:paddingBottom="@dimen/activity_vertical_margin"
+            android:text="@string/dime_roll_edit_text"
+            android:textSize="16sp"
+            android:background="@drawable/rounded_edittext"
+            android:gravity="center" />
+
+        <EditText
+            android:id="@+id/nickelEditText"
+            android:layout_width="140dp"
+            android:layout_height="wrap_content"
+            android:layout_alignBottom="@+id/nickelTextView"
+            android:layout_alignRight="@+id/coinDollarEditText"
+            android:layout_alignEnd="@+id/coinDollarEditText"
+            android:hint="@string/loose"
+            android:inputType="number"
+            android:paddingBottom="@dimen/activity_vertical_margin"
+            android:text="@string/nickel_edit_text"
+            android:textSize="16sp"
+            android:background="@drawable/rounded_edittext"
+            android:gravity="center" />
+
+        <EditText
+            android:id="@+id/nickelRollEditText"
+            android:layout_width="125dp"
+            android:layout_height="wrap_content"
+            android:layout_alignBottom="@+id/nickelTextView"
+            android:layout_alignRight="@+id/addButton"
+            android:layout_alignEnd="@+id/addButton"
+            android:layout_marginRight="125dp"
+            android:layout_marginEnd="125dp"
+            android:hint="@string/rolls"
+            android:inputType="number"
+            android:paddingBottom="@dimen/activity_vertical_margin"
+            android:text="@string/nickel_roll_edit_text"
+            android:textSize="16sp"
+            android:background="@drawable/rounded_edittext"
+            android:gravity="center" />
+
+        <EditText
+            android:id="@+id/pennyEditText"
+            android:layout_width="140dp"
+            android:layout_height="wrap_content"
+            android:layout_alignBottom="@+id/pennyTextView"
+            android:layout_alignRight="@+id/coinDollarEditText"
+            android:layout_alignEnd="@+id/coinDollarEditText"
+            android:hint="@string/loose"
+            android:inputType="number"
+            android:paddingBottom="@dimen/activity_vertical_margin"
+            android:text="@string/penny_edit_text"
+            android:textSize="16sp"
+            android:background="@drawable/rounded_edittext"
+            android:gravity="center" />
+
+        <EditText
+            android:id="@+id/pennyRollEditText"
+            android:layout_width="125dp"
+            android:layout_height="wrap_content"
+            android:layout_alignBottom="@+id/pennyTextView"
+            android:layout_alignRight="@+id/addButton"
+            android:layout_alignEnd="@+id/addButton"
+            android:layout_marginRight="125dp"
+            android:layout_marginEnd="125dp"
+            android:hint="@string/rolls"
+            android:inputType="number"
+            android:paddingBottom="@dimen/activity_vertical_margin"
+            android:text="@string/penny_roll_edit_text"
+            android:textSize="16sp"
+            android:background="@drawable/rounded_edittext"
+            android:gravity="center" />
+
+        <EditText
+            android:id="@+id/nickelValueEditText"
+            android:layout_width="85dp"
+            android:layout_height="wrap_content"
+            android:layout_alignBaseline="@+id/nickelEditText"
+            android:layout_alignRight="@+id/sendButton"
+            android:layout_alignEnd="@+id/sendButton"
+            android:clickable="false"
+            android:cursorVisible="false"
+            android:focusable="false"
+            android:focusableInTouchMode="false"
+            android:gravity="end"
+            android:inputType="numberDecimal"
+            android:paddingBottom="@dimen/activity_vertical_margin"
+            android:text="@string/nickel_value"
+            android:textSize="16sp"
+            android:background="@drawable/rounded_edittext"
+            android:textColor="@color/special" />
+
+        <EditText
+            android:id="@+id/pennyValueEditText"
+            android:layout_width="85dp"
+            android:layout_height="wrap_content"
+            android:layout_alignBaseline="@+id/pennyEditText"
+            android:layout_alignRight="@+id/sendButton"
+            android:layout_alignEnd="@+id/sendButton"
+            android:clickable="false"
+            android:cursorVisible="false"
+            android:focusable="false"
+            android:focusableInTouchMode="false"
+            android:gravity="end"
+            android:inputType="numberDecimal"
+            android:paddingBottom="@dimen/activity_vertical_margin"
+            android:text="@string/penny_value"
+            android:textSize="16sp"
+            android:background="@drawable/rounded_edittext"
+            android:textColor="@color/special" />
+
+        <EditText
+            android:id="@+id/dimeValueEditText"
+            android:layout_width="85dp"
+            android:layout_height="wrap_content"
+            android:layout_alignBaseline="@+id/dimeEditText"
+            android:layout_alignRight="@+id/sendButton"
+            android:layout_alignEnd="@+id/sendButton"
+            android:clickable="false"
+            android:cursorVisible="false"
+            android:focusable="false"
+            android:focusableInTouchMode="false"
+            android:gravity="end"
+            android:inputType="numberDecimal"
+            android:paddingBottom="@dimen/activity_vertical_margin"
+            android:text="@string/dime_value"
+            android:textSize="16sp"
+            android:background="@drawable/rounded_edittext"
+            android:textColor="@color/special" />
+
+        <EditText
+            android:id="@+id/quarterValueEditText"
+            android:layout_width="85dp"
+            android:layout_height="wrap_content"
+            android:layout_alignBaseline="@+id/quarterEditText"
+            android:layout_alignRight="@+id/sendButton"
+            android:layout_alignEnd="@+id/sendButton"
+            android:clickable="false"
+            android:cursorVisible="false"
+            android:focusable="false"
+            android:focusableInTouchMode="false"
+            android:gravity="end"
+            android:inputType="numberDecimal"
+            android:paddingBottom="@dimen/activity_vertical_margin"
+            android:text="@string/quarter_value"
+            android:textSize="16sp"
+            android:background="@drawable/rounded_edittext"
+            android:textColor="@color/special" />
+
+        <EditText
+            android:id="@+id/halfDollarValueEditText"
+            android:layout_width="85dp"
+            android:layout_height="wrap_content"
+            android:layout_alignBaseline="@+id/halfDollarEditText"
+            android:layout_alignRight="@+id/sendButton"
+            android:layout_alignEnd="@+id/sendButton"
+            android:clickable="false"
+            android:cursorVisible="false"
+            android:focusable="false"
+            android:focusableInTouchMode="false"
+            android:gravity="end"
+            android:inputType="numberDecimal"
+            android:paddingBottom="@dimen/activity_vertical_margin"
+            android:text="@string/half_dollar_value"
+            android:textSize="16sp"
+            android:background="@drawable/rounded_edittext"
+            android:textColor="@color/special" />
+
+        <EditText
+            android:id="@+id/coinDollarValueEditText"
+            android:layout_width="85dp"
+            android:layout_height="wrap_content"
+            android:layout_alignBaseline="@+id/coinDollarEditText"
+            android:layout_alignRight="@+id/sendButton"
+            android:layout_alignEnd="@+id/sendButton"
+            android:clickable="false"
+            android:cursorVisible="false"
+            android:focusable="false"
+            android:focusableInTouchMode="false"
+            android:gravity="end"
+            android:inputType="numberDecimal"
+            android:paddingBottom="@dimen/activity_vertical_margin"
+            android:text="@string/coin_dollar_value"
+            android:textSize="16sp"
+            android:background="@drawable/rounded_edittext"
+            android:textColor="@color/special" />
+
+        <EditText
+            android:id="@+id/billTotalEditText"
+            android:layout_width="125dp"
+            android:layout_height="wrap_content"
+            android:layout_alignBaseline="@+id/billTotalTextView"
+            android:layout_alignRight="@+id/oneValueEditText"
+            android:layout_alignEnd="@+id/oneValueEditText"
+            android:clickable="false"
+            android:cursorVisible="false"
+            android:focusable="false"
+            android:focusableInTouchMode="false"
+            android:gravity="end"
+            android:inputType="numberDecimal"
+            android:paddingBottom="@dimen/activity_vertical_margin"
+            android:text="@string/bill_total_value"
+            android:textSize="18sp"
+            android:textStyle="bold"
+            android:background="@drawable/rounded_edittext"
+            android:textColor="@color/special" />
+
+        <EditText
+            android:id="@+id/coinTotalEditText"
+            android:layout_width="125dp"
+            android:layout_height="wrap_content"
+            android:layout_alignBottom="@+id/coinTotalTextView"
+            android:layout_alignRight="@+id/pennyValueEditText"
+            android:layout_alignEnd="@+id/pennyValueEditText"
+            android:clickable="false"
+            android:cursorVisible="false"
+            android:focusable="false"
+            android:focusableInTouchMode="false"
+            android:gravity="end"
+            android:inputType="numberDecimal"
+            android:paddingBottom="@dimen/activity_vertical_margin"
+            android:text="@string/coin_total_value"
+            android:textSize="18sp"
+            android:textStyle="bold"
+            android:background="@drawable/rounded_edittext"
+            android:textColor="@color/special" />
+
+        <EditText
+            android:id="@+id/checkTotalEditText"
+            android:layout_width="125dp"
+            android:layout_height="wrap_content"
+            android:layout_alignBottom="@+id/checkTotalTextView"
+            android:layout_alignRight="@+id/pennyValueEditText"
+            android:layout_alignEnd="@+id/pennyValueEditText"
+            android:clickable="false"
+            android:cursorVisible="false"
+            android:focusable="false"
+            android:focusableInTouchMode="false"
+            android:gravity="end"
+            android:inputType="numberDecimal"
+            android:paddingBottom="@dimen/activity_vertical_margin"
+            android:text="@string/coin_total_value"
+            android:textSize="18sp"
+            android:textStyle="bold"
+            android:background="@drawable/rounded_edittext"
+            android:textColor="@color/special" />
+
+        <EditText
+            android:id="@+id/finalAmountEditText"
+            android:layout_width="200dp"
+            android:layout_height="wrap_content"
+            android:layout_alignBottom="@+id/finalAmountTextView"
+            android:layout_alignRight="@+id/pennyValueEditText"
+            android:layout_alignEnd="@+id/pennyValueEditText"
+            android:clickable="false"
+            android:cursorVisible="false"
+            android:focusable="false"
+            android:focusableInTouchMode="false"
+            android:gravity="end"
+            android:inputType="numberDecimal"
+            android:paddingBottom="@dimen/activity_vertical_margin"
+            android:text="@string/final_amount_value"
+            android:textSize="25sp"
+            android:textStyle="bold"
+            android:background="@drawable/rounded_edittext"
+            android:textColor="@color/special" />
+
+        <EditText
+            android:id="@+id/hundredValueEditText"
+            android:layout_width="85dp"
+            android:layout_height="wrap_content"
+            android:layout_alignBaseline="@+id/hundredEditText"
+            android:layout_alignRight="@+id/sendButton"
+            android:layout_alignEnd="@+id/sendButton"
+            android:clickable="false"
+            android:cursorVisible="false"
+            android:focusable="false"
+            android:focusableInTouchMode="false"
+            android:gravity="end"
+            android:inputType="numberDecimal"
+            android:paddingBottom="@dimen/activity_vertical_margin"
+            android:text="@string/hundred_value"
+            android:textSize="16sp"
+            android:background="@drawable/rounded_edittext"
+            android:textColor="@color/special" />
+
+        <EditText
+            android:id="@+id/fiftyValueEditText"
+            android:layout_width="85dp"
+            android:layout_height="wrap_content"
+            android:layout_alignBaseline="@+id/fiftyEditText"
+            android:layout_alignRight="@+id/sendButton"
+            android:layout_alignEnd="@+id/sendButton"
+            android:clickable="false"
+            android:cursorVisible="false"
+            android:focusable="false"
+            android:focusableInTouchMode="false"
+            android:gravity="end"
+            android:inputType="numberDecimal"
+            android:paddingBottom="@dimen/activity_vertical_margin"
+            android:text="@string/fifty_value"
+            android:textSize="16sp"
+            android:background="@drawable/rounded_edittext"
+            android:textColor="@color/special" />
+
+        <EditText
+            android:id="@+id/tenValueEditText"
+            android:layout_width="85dp"
+            android:layout_height="wrap_content"
+            android:layout_alignBaseline="@+id/tenEditText"
+            android:layout_alignRight="@+id/sendButton"
+            android:layout_alignEnd="@+id/sendButton"
+            android:clickable="false"
+            android:cursorVisible="false"
+            android:focusable="false"
+            android:focusableInTouchMode="false"
+            android:gravity="end"
+            android:inputType="numberDecimal"
+            android:paddingBottom="@dimen/activity_vertical_margin"
+            android:text="@string/ten_value"
+            android:textSize="16sp"
+            android:background="@drawable/rounded_edittext"
+            android:textColor="@color/special" />
+
+        <EditText
+            android:id="@+id/fiveValueEditText"
+            android:layout_width="85dp"
+            android:layout_height="wrap_content"
+            android:layout_alignBaseline="@+id/fiveEditText"
+            android:layout_alignRight="@+id/sendButton"
+            android:layout_alignEnd="@+id/sendButton"
+            android:clickable="false"
+            android:cursorVisible="false"
+            android:focusable="false"
+            android:focusableInTouchMode="false"
+            android:gravity="end"
+            android:inputType="numberDecimal"
+            android:paddingBottom="@dimen/activity_vertical_margin"
+            android:text="@string/five_value"
+            android:textSize="16sp"
+            android:background="@drawable/rounded_edittext"
+            android:textColor="@color/special" />
+
+        <EditText
+            android:id="@+id/twoValueEditText"
+            android:layout_width="85dp"
+            android:layout_height="wrap_content"
+            android:layout_alignBaseline="@+id/twoEditText"
+            android:layout_alignRight="@+id/sendButton"
+            android:layout_alignEnd="@+id/sendButton"
+            android:clickable="false"
+            android:cursorVisible="false"
+            android:focusable="false"
+            android:focusableInTouchMode="false"
+            android:gravity="end"
+            android:inputType="numberDecimal"
+            android:paddingBottom="@dimen/activity_vertical_margin"
+            android:text="@string/two_value"
+            android:textSize="16sp"
+            android:background="@drawable/rounded_edittext"
+            android:textColor="@color/special" />
+
+        <EditText
+            android:id="@+id/oneValueEditText"
+            android:layout_width="85dp"
+            android:layout_height="wrap_content"
+            android:layout_alignBaseline="@+id/oneEditText"
+            android:layout_alignRight="@+id/sendButton"
+            android:layout_alignEnd="@+id/sendButton"
+            android:clickable="false"
+            android:cursorVisible="false"
+            android:focusable="false"
+            android:focusableInTouchMode="false"
+            android:gravity="end"
+            android:inputType="numberDecimal"
+            android:paddingBottom="@dimen/activity_vertical_margin"
+            android:text="@string/one_value"
+            android:textSize="16sp"
+            android:background="@drawable/rounded_edittext"
+            android:textColor="@color/special" />
+
+        <EditText
+            android:id="@+id/twentyValueEditText"
+            android:layout_width="85dp"
+            android:layout_height="wrap_content"
+            android:layout_alignBaseline="@+id/twentyEditText"
+            android:layout_alignRight="@+id/sendButton"
+            android:layout_alignEnd="@+id/sendButton"
+            android:clickable="false"
+            android:cursorVisible="false"
+            android:focusable="false"
+            android:focusableInTouchMode="false"
+            android:gravity="end"
+            android:inputType="numberDecimal"
+            android:paddingBottom="@dimen/activity_vertical_margin"
+            android:text="@string/twenty_value"
+            android:textSize="16sp"
+            android:background="@drawable/rounded_edittext"
+            android:textColor="@color/special" />
+
+        <TextView
+            android:id="@+id/billTextView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentTop="true"
+            android:layout_marginLeft="40dp"
+            android:layout_marginStart="40dp"
+            android:layout_marginTop="14dp"
+            android:textSize="20sp"
+            android:text="@string/bills"
+            android:textColor="@color/standard" />
+
+        <TextView
+            android:id="@+id/halfDollarTextView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignLeft="@+id/coinDollarTextView"
+            android:layout_alignStart="@+id/coinDollarTextView"
+            android:layout_below="@+id/coinDollarTextView"
+            android:layout_marginTop="14dp"
+            android:textSize="20sp"
+            android:text="@string/half_dollar"
+            android:textColor="@color/standard" />
+
+        <TextView
+            android:id="@+id/quarterTextView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignLeft="@+id/halfDollarTextView"
+            android:layout_alignStart="@+id/halfDollarTextView"
+            android:layout_below="@+id/halfDollarTextView"
+            android:layout_marginTop="14dp"
+            android:textSize="20sp"
+            android:text="@string/quarter"
+            android:textColor="@color/standard" />
+
+        <TextView
+            android:id="@+id/dimeTextView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignLeft="@+id/quarterTextView"
+            android:layout_alignStart="@+id/quarterTextView"
+            android:layout_below="@+id/quarterTextView"
+            android:layout_marginTop="14dp"
+            android:textSize="20sp"
+            android:text="@string/dime"
+            android:textColor="@color/standard" />
+
+        <TextView
+            android:id="@+id/nickelTextView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignLeft="@+id/dimeTextView"
+            android:layout_alignStart="@+id/dimeTextView"
+            android:layout_below="@+id/dimeTextView"
+            android:layout_marginTop="14dp"
+            android:textSize="20sp"
+            android:text="@string/nickel"
+            android:textColor="@color/standard" />
+
+        <TextView
+            android:id="@+id/fiftyTextView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignLeft="@+id/hundredTextView"
+            android:layout_alignStart="@+id/hundredTextView"
+            android:layout_below="@+id/hundredTextView"
+            android:layout_marginTop="14dp"
+            android:textSize="20sp"
+            android:text="@string/fifty"
+            android:textColor="@color/standard" />
+
+        <TextView
+            android:id="@+id/twentyTextView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignLeft="@+id/fiftyTextView"
+            android:layout_alignStart="@+id/fiftyTextView"
+            android:layout_below="@+id/fiftyTextView"
+            android:layout_marginTop="14dp"
+            android:textSize="20sp"
+            android:text="@string/twenty"
+            android:textColor="@color/standard" />
+
+        <TextView
+            android:id="@+id/tenTextView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignLeft="@+id/twentyTextView"
+            android:layout_alignStart="@+id/twentyTextView"
+            android:layout_below="@+id/twentyTextView"
+            android:layout_marginTop="16dp"
+            android:textSize="20sp"
+            android:text="@string/ten"
+            android:textColor="@color/standard" />
+
+        <TextView
+            android:id="@+id/fiveTextView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignLeft="@+id/tenTextView"
+            android:layout_alignStart="@+id/tenTextView"
+            android:layout_below="@+id/tenTextView"
+            android:layout_marginTop="14dp"
+            android:textSize="20sp"
+            android:text="@string/five"
+            android:textColor="@color/standard" />
+
+        <TextView
+            android:id="@+id/twoTextView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignLeft="@+id/fiveTextView"
+            android:layout_alignStart="@+id/fiveTextView"
+            android:layout_below="@+id/fiveTextView"
+            android:layout_marginTop="14dp"
+            android:textSize="20sp"
+            android:text="@string/two"
+            android:textColor="@color/standard" />
+
+        <TextView
+            android:id="@+id/pennyTextView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignLeft="@+id/nickelTextView"
+            android:layout_alignStart="@+id/nickelTextView"
+            android:layout_below="@+id/nickelTextView"
+            android:layout_marginTop="14dp"
+            android:textSize="20sp"
+            android:text="@string/penny"
+            android:textColor="@color/standard" />
+
+        <TextView
+            android:id="@+id/billTotalTextView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_below="@+id/oneTextView"
+            android:layout_marginTop="14dp"
+            android:textSize="20sp"
+            android:textStyle="bold"
+            android:text="@string/bill_total"
+            android:textColor="@color/standard" />
+
+        <TextView
+            android:id="@+id/amountTextView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBaseline="@+id/billTextView"
+            android:layout_alignBottom="@+id/billTextView"
+            android:layout_centerHorizontal="true"
+            android:textSize="20sp"
+            android:text="@string/amount"
+            android:textColor="@color/standard" />
+
+        <TextView
+            android:id="@+id/coinTextView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/billTotalTextView"
+            android:layout_marginLeft="40dp"
+            android:layout_marginStart="40dp"
+            android:layout_marginTop="14dp"
+            android:textSize="20sp"
+            android:text="@string/coins"
+            android:textColor="@color/standard" />
+
+        <TextView
+            android:id="@+id/amountTextView2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBaseline="@+id/coinTextView"
+            android:layout_alignBottom="@+id/coinTextView"
+            android:layout_centerHorizontal="true"
+            android:textSize="20sp"
+            android:text="@string/amount"
+            android:textColor="@color/standard" />
+
+        <TextView
+            android:id="@+id/totalValueTextView2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBaseline="@+id/amountTextView2"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentEnd="true"
+            android:layout_marginRight="15dp"
+            android:layout_marginEnd="15dp"
+            android:textSize="20sp"
+            android:text="@string/total_value"
+            android:textColor="@color/standard" />
+
+        <TextView
+            android:id="@+id/hundredTextView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:layout_below="@+id/billTextView"
+            android:layout_marginLeft="10dp"
+            android:layout_marginStart="10dp"
+            android:layout_marginTop="14dp"
+            android:textSize="20sp"
+            android:text="@string/hundred"
+            android:textColor="@color/standard" />
+
+        <TextView
+            android:id="@+id/finalAmountTextView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignLeft="@+id/pennyTextView"
+            android:layout_alignStart="@+id/pennyTextView"
+            android:layout_below="@+id/checkTotalTextView"
+            android:layout_marginTop="20dp"
+            android:text="@string/final_amount"
+            android:textSize="20sp"
+            android:textStyle="bold"
+            android:textAppearance="?android:attr/textAppearanceLarge"
+            android:textColor="@color/standard" />
+
+        <TextView
+            android:id="@+id/coinTotalTextView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_below="@+id/pennyTextView"
+            android:layout_marginTop="20dp"
+            android:textSize="20sp"
+            android:textStyle="bold"
+            android:text="@string/coin_total"
+            android:textColor="@color/standard" />
+
+        <TextView
+            android:id="@+id/checkTotalTextView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_below="@+id/linearLayout"
+            android:layout_marginTop="20dp"
+            android:textSize="20sp"
+            android:textStyle="bold"
+            android:text="@string/total_checks"
+            android:textColor="@color/standard" />
+
+        <TextView
+            android:id="@+id/coinDollarTextView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:layout_below="@+id/coinTextView"
+            android:layout_marginLeft="10dp"
+            android:layout_marginStart="10dp"
+            android:layout_marginTop="14dp"
+            android:textSize="20sp"
+            android:text="@string/coin_dollar"
+            android:textColor="@color/standard" />
+
+        <TextView
+            android:id="@+id/oneTextView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignLeft="@+id/twoTextView"
+            android:layout_alignStart="@+id/twoTextView"
+            android:layout_below="@+id/twoTextView"
+            android:layout_marginTop="14dp"
+            android:textSize="20sp"
+            android:text="@string/one"
+            android:textColor="@color/standard" />
+
+        <TextView
+            android:id="@+id/totalValueTextView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBaseline="@+id/amountTextView"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentEnd="true"
+            android:layout_marginRight="15dp"
+            android:layout_marginEnd="15dp"
+            android:textSize="20sp"
+            android:text="@string/total_value"
+            android:textColor="@color/standard" />
+
+        <Button
+            android:id="@+id/saveButton"
+            android:layout_width="150dp"
+            android:layout_height="50dp"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentBottom="true"
+            android:layout_below="@+id/finalAmountTextView"
+            android:layout_marginTop="14dp"
+            android:text="@string/save_data"
+            android:textSize="20sp"
+            android:background="@drawable/vir_but1"
+            android:textColor="#FFFFFF" />
+
+        <Button
+            android:id="@+id/sendButton"
+            android:layout_width="150dp"
+            android:layout_height="50dp"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentEnd="true"
+            android:layout_alignTop="@+id/clearButton"
+            android:text="@string/send_email"
+            android:textSize="20sp"
+            android:background="@drawable/vir_but1"
+            android:textColor="#FFFFFF" />
+
+        <Button
+            android:id="@+id/clearButton"
+            android:layout_width="150dp"
+            android:layout_height="50dp"
+            android:layout_alignBaseline="@+id/saveButton"
+            android:layout_alignBottom="@+id/saveButton"
+            android:layout_centerHorizontal="true"
+            android:text="@string/clear_all"
+            android:background="@drawable/vir_but1"
+            android:textColor="#FFFFFF"
+            android:textSize="20sp" />
+
+        <Button
+            android:id="@+id/addButton"
+            android:layout_width="150dp"
+            android:layout_height="50dp"
+            android:layout_toLeftOf="@+id/checksEditText"
+            android:layout_toStartOf="@+id/checksEditText"
+            android:layout_centerHorizontal="true"
+            android:layout_below="@+id/coinTotalTextView"
+            android:layout_marginTop="14dp"
+            android:background="@drawable/vir_but1"
+            android:text="@string/add"
+            android:textColor="#FFFFFF"
+            android:textSize="20sp" />
+
+        <EditText
+            android:id="@+id/checksEditText"
+            android:layout_width="90dp"
+            android:layout_height="wrap_content"
+            android:background="@drawable/rounded_edittext"
+            android:layout_marginTop="15dp"
+            android:layout_alignBaseline="@+id/addButton"
+            android:layout_alignBottom="@+id/addButton"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentEnd="true"
+            android:gravity="center"
+            android:hint="@string/check_value"
+            android:inputType="numberDecimal|numberSigned"
+            android:textColor="#000000"
+            android:textSize="16sp" />
+
+        <TextView
+            android:layout_width="1dp"
+            android:layout_height="1dp"
+            android:id="@+id/blank"
+            android:layout_centerHorizontal="true"
+            android:layout_centerVertical="true"
+            android:visibility="invisible"/>
+
+        <LinearLayout
+            android:id="@+id/linearLayout"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:layout_below="@+id/addButton"
+            android:layout_marginTop="14dp"
+            android:textSize="20sp"
+            android:orientation="vertical" >
+
+        </LinearLayout>
+
+    </RelativeLayout>
+
+</ScrollView>

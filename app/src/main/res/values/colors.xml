@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    
+    <color name="standard">#FFFFFF</color>  <!-- white -->
+    <color name="special">#56A0D3</color>  <!-- carolina_blue -->
+
+</resources>
